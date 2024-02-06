@@ -2,21 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Slide</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Slide</title>
+    <link rel="stylesheet" href="./iconfont.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Contacts</a>
-      <a href="#">More</a>
-    </nav>
-  </header>
-  <script src="./app.js"></script>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contacts</a>
+            <a href="#">More</a>
+        </nav>
+    </header>
+    <div class="carousel">
+        <div class="slide-list">
+            <div class="slide-item">
+                <img src="./images/img1.jpg" alt="">
+                <div class="content">
+                    <div class="author">RYAN FAWCETT</div>
+                    <div class="title">Carousel Slide</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Non sint vel autem, velit quaerat ad itaque fuga aut, maiores tempore animi dicta ipsam sequi, quod ullam facilis ipsum debitis odit.
+                    </div>
+                    <div class="btns">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <img src="./images/img3.jpg" alt="">
+                <div class="content">
+                    <div class="author">RYAN FAWCETT</div>
+                    <div class="title">Carousel Slide</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Non sint vel autem, velit quaerat ad itaque fuga aut, maiores tempore animi dicta ipsam sequi, quod ullam facilis ipsum debitis odit.
+                    </div>
+                    <div class="btns">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <img src="./images/img4.jpg" alt="">
+                <div class="content">
+                    <div class="author">RYAN FAWCETT</div>
+                    <div class="title">Carousel Slide</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Non sint vel autem, velit quaerat ad itaque fuga aut, maiores tempore animi dicta ipsam sequi, quod ullam facilis ipsum debitis odit.
+                    </div>
+                    <div class="btns">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <img src="./images/img2.jpg" alt="">
+                <div class="content">
+                    <div class="author">RYAN FAWCETT</div>
+                    <div class="title">Carousel Slide</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Non sint vel autem, velit quaerat ad itaque fuga aut, maiores tempore animi dicta ipsam sequi, quod ullam facilis ipsum debitis odit.
+                    </div>
+                    <div class="btns">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="./images/img1.jpg" alt="">
+                <div class="content">
+                    <div class="title">Name Slider</div>
+                    <div class="des">Description</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/img3.jpg" alt="">
+                <div class="content">
+                    <div class="title">Name Slider</div>
+                    <div class="des">Description</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/img4.jpg" alt="">
+                <div class="content">
+                    <div class="title">Name Slider</div>
+                    <div class="des">Description</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/img2.jpg" alt="">
+                <div class="content">
+                    <div class="title">Name Slider</div>
+                    <div class="des">Description</div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+          <button id="prev" class="iconfont icon-left"></button>
+          <button id="next" class="iconfont icon-right"></button>
+        </div>
+
+        <div class="timer"></div>
+    </div>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
