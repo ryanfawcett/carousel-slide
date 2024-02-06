@@ -1,0 +1,27 @@
+@import url('https://fonts.font.im/css?family=Quicksand:300,400,500,700');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    margin-right: 40px;
+}
