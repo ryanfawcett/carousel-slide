@@ -1,7 +1,7 @@
 let prev = document.getElementById('prev')
 let next = document.getElementById('next')
 let carousel = document.querySelector('.carousel')
-let carouselList = document.querySelector('.slide-list')
+let slider = document.querySelector('.slide-list')
 let thumbnail = document.querySelector('.thumbnail')
 
 prev.onclick = function() {
@@ -12,8 +12,8 @@ next.onclick = function() {
     showSlider('next')
 }
 
-let defaultTime = 3000
-let autoNextTime = 7000
+let defaultTime = 500
+let autoNextTime = 5000
 
 let defaultTimmer
 
@@ -26,12 +26,12 @@ function showSlider(type) {
     let thumbnails = document.querySelectorAll('.thumbnail .item')
 
     if (type === 'next') {
-        carouselList.appendChild(sliders[0])
+        slider.appendChild(sliders[0])
         thumbnail.appendChild(thumbnails[0])
         carousel.classList.add('next')
     } else {
         let lastSliderPos = sliders.length - 1
-        carouselList.prepend(sliders[lastSliderPos])
+        slider.prepend(sliders[lastSliderPos])
         thumbnail.prepend(thumbnails[lastSliderPos])
         carousel.classList.add('prev')
     }
@@ -41,4 +41,9 @@ function showSlider(type) {
         carousel.classList.remove('prev')
         carousel.classList.remove('next')
     }, defaultTime)
+
+    clearTimeout(autoNextTimmer)
+    autoNextTimmer = setInterval(() => {
+        next.click()
+    }, autoNextTime)
 }
