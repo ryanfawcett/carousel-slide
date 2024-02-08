@@ -6,10 +6,12 @@ let thumbnail = document.querySelector('.thumbnail')
 
 prev.onclick = function() {
     showSlider('prev')
+    timerReset()
 }
 
 next.onclick = function() {
     showSlider('next')
+    timerReset()
 }
 
 let defaultTime = 500
@@ -46,4 +48,11 @@ function showSlider(type) {
     autoNextTimmer = setInterval(() => {
         next.click()
     }, autoNextTime)
+}
+
+function timerReset() {
+    let timer = document.getElementById('timer')
+    timer.classList.remove('timer')
+    timer.offsetWidth = timer.offsetWidth
+    timer.classList.add('timer')
 }
